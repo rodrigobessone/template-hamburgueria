@@ -14,7 +14,7 @@ import StyledModalHeader from "./StyledModalHeader";
 
 function CartModal({ setModalState, productsCart, modalRef, removeItem, setProductsCart }) {
   
-  const handleToDelete = (productId) => {
+  function handleToDelete(productId) {
     removeItem(productId);
   };
 

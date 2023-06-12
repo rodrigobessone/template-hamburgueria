@@ -62,7 +62,7 @@ function App() {
     }
   }
 
-  const removeItem = (productId) => {
+  function removeItem(productId) {
     const existing = productsCart.find((item) => item.id === productId);
     if (existing) {
       if (existing.quantity === 1) {
@@ -89,7 +89,7 @@ function App() {
     }
   };
 
-  const handleSearch = (searchValue) => {
+  function handleSearch (searchValue)  {
     const filtered = products.filter((product) =>
       product.name.toLowerCase().includes(searchValue.toLowerCase())
     );

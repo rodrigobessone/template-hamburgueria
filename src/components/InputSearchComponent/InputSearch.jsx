@@ -5,7 +5,7 @@ import StyledInputSearch from './StyledInputSearch';
 import { useState } from 'react';
 
 function InputSearch({ handleSearch }) {
-  const handleChange = (event) => {
+  function handleChange(event) {
     const searchText = event.target.value;
     handleSearch(searchText);
   };
